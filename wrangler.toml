@@ -37,3 +37,7 @@ name = "cloudflare-docker-proxy-staging"
 [env.staging.vars]
 MODE = "staging"
 TARGET_UPSTREAM = ""
+
+node_compat = true 
+[build] 
+command = "yarn install --mode=skip-build && yarn build"
